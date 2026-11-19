@@ -6,12 +6,11 @@ Reproduction responsive d'un portfolio photographique à partir de la maquette f
 
 - `index.html` : structure HTML sémantique.
 - `style.css` : mise en page, galerie CSS Grid et media queries.
-- `script.js` : mélange aléatoire des positions des photos à chaque rechargement et filtres interactifs par catégorie.
+
 
 ## Technologies et ressources
 
 - HTML5 et CSS3
-- JavaScript natif
 - Google Fonts : Yeseva One et Montserrat
 - Font Awesome
 - Lorem Picsum pour les images de démonstration
