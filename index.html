@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Solène Avril, photographe d'art, créative et engagée.">
+    <title>Solène Avril — Photographe d'art</title>
+
+    <!-- Polices demandées dans les consignes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Yeseva+One&display=swap" rel="stylesheet">
+
+    <!-- Icônes Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="page-shell" id="accueil">
+        <header class="site-header">
+            <a class="wordmark" href="#accueil" aria-label="Solène Avril, accueil">SOLÈNE AVRIL.</a>
+            <nav class="social-links" aria-label="Réseaux sociaux">
+                <!-- Remplacer les # par les véritables liens des réseaux sociaux si nécessaire -->
+                <a href="#contact" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                <a href="#contact" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p" aria-hidden="true"></i></a>
+                <a href="#contact" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="intro" aria-labelledby="intro-title">
+                <p class="eyebrow">PORTFOLIO PHOTOGRAPHIQUE</p>
+                <h1 id="intro-title">Hello,<br>Je suis photographe d’art,<br><span>créative &amp; engagée.</span></h1>
+                <p class="intro-copy">Je raconte le monde à travers mon objectif. Des paysages silencieux aux instants du quotidien, chaque image est une invitation à regarder autrement.</p>
+            </section>
+
+            <section class="work" id="galerie" aria-labelledby="gallery-title">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">SÉLECTION DE PHOTOGRAPHIES</p>
+                        <h2 id="gallery-title">Mon univers en images</h2>
+                    </div>
+                    <p class="photo-count" aria-live="polite"><span id="visible-count">12</span> photographies</p>
+                </div>
+
+                <div class="filters" role="group" aria-label="Filtrer les photographies">
+                    <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">Tout voir</button>
+                    <button class="filter-button" type="button" data-filter="nature" aria-pressed="false">Nature</button>
+                    <button class="filter-button" type="button" data-filter="voyage" aria-pressed="false">Voyage</button>
+                    <button class="filter-button" type="button" data-filter="urbain" aria-pressed="false">Urbain</button>
+                    <button class="filter-button" type="button" data-filter="art" aria-pressed="false">Art &amp; détails</button>
+                </div>
+
+                <div class="gallery" id="photo-gallery">
+                    <figure class="gallery-card" data-category="nature">
+                        <img src="https://picsum.photos/seed/solene-forest-01/700/520" alt="Ambiance végétale et forêt" loading="lazy">
+                        <figcaption><span>Nature</span><strong>Au cœur du vivant</strong></figcaption>
+                    </figure>
+                    <figure class="gallery-card" data-category="urbain">
+                        <img src="https://picsum.photos/seed/solene-city-02/700/520" alt="Architecture et lignes urbaines" loading="lazy">
+                        <figcaption><span>Urbain</span><strong>Géométrie citadine</strong></figcaption>
+                    </figure>
+                    <figure class="gallery-card" data-category="voyage">
+                        <img src="https://picsum.photos/seed/solene-coast-03/700/520" alt="Horizon et paysage côtier" loading="lazy">
+                        <figcaption><span>Voyage</span><strong>Au bout de l’horizon</strong></figcaption>
+                    </figure>
+                    <figure class="gallery-card" data-category="nature">
+                        <img src="https://picsum.photos/seed/solene-leaves-04/700/520" alt="Détails de feuilles" loading="lazy">
+                        <figcaption><span>Nature</span><strong>Petits détails</strong></figcaption>
+                    </figure>
+                    <figure class="gallery-card" data-category="art">
+                        <img src="https://picsum.photos/seed/solene-stilllife-05/700/520" alt="Composition photographique artistique" loading="lazy">
+                        <figcaption><span>Art &amp; détails</span><strong>Composition</strong></figcaption>
+                    </figure>
+                    <figure class="gallery-card" data-category="voyage">
+                        <img src="https://picsum.photos/seed/solene-mountain-06/700/520" alt="Paysage de montagne" loading="lazy">
+                        <figcaption><span>Voyage</span><strong>Prendre le large</strong></figcaption>
+                    </figure>
+                    <figure class="gallery-card" data-category="nature">
+                        <img src="https://picsum.photos/seed/solene-meadow-07/700/520" alt="Paysage naturel" loading="lazy">
+                        <figcaption><span>Nature</span><strong>La lumière du jour</strong></figcaption>
+                    </figure>
+                    <figure class="gallery-card" data-category="urbain">
+                        <img src="https://picsum.photos/seed/solene-street-08/700/520" alt="Scène de rue" loading="lazy">
+                        <figcaption><span>Urbain</span><strong>Instants de ville</strong></figcaption>
+                    </figure>
+                    <figure class="gallery-card" data-category="art">
+                        <img src="https://picsum.photos/seed/solene-detail-09/700/520" alt="Détail et texture" loading="lazy">
+                        <figcaption><span>Art &amp; détails</span><strong>Textures sensibles</strong></figcaption>
+                    </figure>
+                    <figure class="gallery-card" data-category="voyage">
+                        <img src="https://picsum.photos/seed/solene-road-10/700/520" alt="Route vers un paysage lointain" loading="lazy">
+                        <figcaption><span>Voyage</span><strong>Sur la route</strong></figcaption>
+                    </figure>
+                    <figure class="gallery-card" data-category="nature">
+                        <img src="https://picsum.photos/seed/solene-water-11/700/520" alt="Eau et nature" loading="lazy">
+                        <figcaption><span>Nature</span><strong>Reflets tranquilles</strong></figcaption>
+                    </figure>
+                    <figure class="gallery-card" data-category="art">
+                        <img src="https://picsum.photos/seed/solene-object-12/700/520" alt="Objet photographié en studio" loading="lazy">
+                        <figcaption><span>Art &amp; détails</span><strong>Étude de formes</strong></figcaption>
+                    </figure>
+                </div>
+                <p class="empty-message" id="empty-message" hidden>Aucune photographie dans cette catégorie.</p>
+            </section>
+        </main>
+
+        <footer class="site-footer" id="contact">
+            <p>© 2026 Solène Avril — Projet Fil Rouge</p>
+            <a href="#accueil">Retour en haut ↑</a>
+        </footer>
+    </div>
+</body>
+</html>
